@@ -15,4 +15,4 @@ jobs:
       - name: Hello World
         run: echo "Hello world"
       - name: echo server.js
-        run: node server.js
+        run: node server/server.js
