@@ -6,7 +6,13 @@ jobs:
   greetings:
     runs-on: ubuntu-latest
     steps:
+      - name: Clone Repo
+        uses: actions/checkout@v4
+      - name: Setup nodejs
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
       - name: Hello World
-        run: echo "hellow world"
+        run: echo "Hello world"
       - name: echo server.js
         run: node server.js
