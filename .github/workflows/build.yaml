@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Hello World
         run: echo "hellow world"
-      - name: echo sefrver.js
+      - name: echo server.js
         run: node server.js
